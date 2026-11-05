@@ -1,0 +1,4 @@
+interface:
+  display_name: "樱洛经验记忆"
+  short_description: "保存经过验证的解决案例，检索历史经验，并每新增二十条进行复核整理"
+  default_prompt: "使用 $yingluo-skill 检索相关经验，记录有验证证据的解决过程，并处理到期复核。"

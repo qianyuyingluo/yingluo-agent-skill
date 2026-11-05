@@ -1,0 +1,22 @@
+{
+  "case_key": "synthetic-demo/import-001",
+  "title": "演示案例：Python 解释器不一致导致导入失败",
+  "project": "synthetic-demo",
+  "scope": "project",
+  "environment": {"python": "3.11", "os": "demo-linux"},
+  "tags": ["python", "import", "environment"],
+  "error": "虚构演示：安装依赖后，项目解释器仍然报告 ModuleNotFoundError。",
+  "cause": "虚构演示：安装使用系统解释器，执行使用项目虚拟环境，依赖目录不同。",
+  "cause_status": "confirmed",
+  "failed_attempts": ["虚构演示：在系统环境重复安装，没有改变项目环境。"],
+  "solution": ["比较安装和运行使用的解释器路径。", "在正确的项目解释器中安装所需依赖，并重跑导入测试。"],
+  "boundaries": ["仅用于展示数据格式；请勿将虚构案例写入真实经验库。", "只适用于已确认的解释器不一致问题。"],
+  "verification": {
+    "method": "synthetic demonstration, no real test claimed",
+    "expected": "演示：项目环境导入成功",
+    "observed": "演示：导入成功，退出码 0",
+    "artifact_ref": "synthetic://demo/import-check",
+    "verified_at": "2026-11-05T10:00:00+08:00",
+    "result": "pass"
+  }
+}
